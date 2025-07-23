@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إضافة رأي | معهد الخوارزمي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #DFE4EC;
+      color: #457b9d;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1D3557;
+      margin: 0;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1D3557;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    form {
+      background-color: white;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #1D3557;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #1D3557;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 9999px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #457b9d;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .back-link a {
+      background-color: #A569BD;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .back-link a:hover {
+      background-color: #914fa6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="https://i.top4top.io/p_3483qp7831.jpg" alt="شعار المعهد" />
+    <h1>دليل متدربات معهد الخوارزمي</h1>
+  </header>
+
+  <main>
+    <h2>إضافة رأيك وتجربتك</h2>
+    <form onsubmit="alert('شكرًا لمشاركتك!'); return false;">
+      <label for="name">الاسم (اختياري)</label>
+      <input type="text" id="name" name="name" placeholder="اكتبي اسمك هنا">
+
+      <label for="email">البريد الإلكتروني للتواصل</label>
+      <input type="email" id="email" name="email" required placeholder="ex: example@email.com">
+
+      <label for="period">فترة التدريب</label>
+      <input type="text" id="period" name="period" required placeholder="مثلاً: شهرين او 6 شهور  ">
+
+      <label for="experience">وصف التجربة</label>
+      <textarea id="experience" name="experience" rows="5" required placeholder="حدثينا عن تجربتك في التدريب..."></textarea>
+
+      <label for="rating">التقييم العام</label>
+      <select id="rating" name="rating" required>
+        <option value="">اختاري تقييمًا</option>
+        <option value="5">⭐⭐⭐⭐⭐ - ممتاز جدًا</option>
+        <option value="4">⭐⭐⭐⭐ - ممتاز</option>
+        <option value="3">⭐⭐⭐ - جيد</option>
+        <option value="2">⭐⭐ - مقبول</option>
+        <option value="1">⭐ - ضعيف</option>
+      </select>
+
+      <label for="suggestions">اقتراحات للتحسين (اختياري)</label>
+      <textarea id="suggestions" name="suggestions" rows="3" placeholder="هل لديك أفكار لتحسين التدريب أو الخدمات؟"></textarea>
+
+      <button type="submit">إرسال الرأي</button>
+    </form>
+
+    <div class="back-link">
+      <a href="reviews.html">⬅ العودة إلى آراء المتدربات</a>
+    </div>
+  </main>
+
+</body>
+
+</html>
