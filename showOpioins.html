@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تصفح الآراء | معهد الخوارزمي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #DFE4EC;
+      color: #457b9d;
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1D3557;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    nav a {
+      background-color: #1D3557;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 9999px;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    nav a:nth-child(n+5) {
+      background-color: #A569BD;
+    }
+
+    nav a:hover {
+      background-color: #914fa6;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1D3557;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (min-width: 640px) {
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .review-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .review-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: #1D3557;
+    }
+
+    .stars {
+      color: #f1c40f;
+      margin-bottom: 12px;
+    }
+
+    .review-card p {
+      font-size: 14px;
+      color: #457b9d;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="https://i.top4top.io/p_3483qp7831.jpg" alt="شعار المعهد" />
+    <h1>دليل متدربات معهد الخوارزمي</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+        <a href="opinions.html">إضافة رأي</a>
+        <a href="showOpioins.html">تصفح الآراء</a>
+        <a href="#">تصفح القرالب</a>
+        <a href="#">تواصل معنا</a>
+        <a href="#">اسألني</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>آراء المتدربات السابقات</h2>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <h3>ريم العتيبي</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>الدورة كانت ممتازة جدًا، والمدربة رائعة. استفدت كثيرًا خصوصًا في الجانب العملي.</p>
+      </div>
+      <div class="review-card">
+        <h3>نورة الحربي</h3>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <p>المحتوى جيد ولكن تمنيت يكون فيه وقت أكثر للأسئلة. بشكل عام تجربة رائعة.</p>
+      </div>
+      <div class="review-card">
+        <h3>هدى الزهراني</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>كل شيء كان منظم جدًا. ساعدني كثيرًا في تطوير مهاراتي في الحاسب.</p>
+      </div>
+      <div class="review-card">
+        <h3>سارة المالكي</h3>
+        <div class="stars">⭐⭐⭐</div>
+        <p>الشرح واضح ولكن بعض الأدوات ما كانت محدثة، يفضل تحديث المناهج.</p>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
