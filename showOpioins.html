@@ -6,66 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>تصفح الآراء | معهد الخوارزمي</title>
   <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      background-color: #DFE4EC;
-      color: #457b9d;
-      font-family: 'Cairo', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 24px 0;
-      text-align: center;
-    }
-
-    header img {
-      height: 80px;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      font-size: 24px;
-      font-weight: bold;
-      color: #1D3557;
-      margin: 0;
-    }
-
-    nav {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-    }
-
-    nav a {
-      background-color: #1D3557;
-      color: white;
-      padding: 8px 20px;
-      border-radius: 9999px;
-      font-size: 14px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    nav a:nth-child(n+5) {
-      background-color: #A569BD;
-    }
-
-    nav a:hover {
-      background-color: #914fa6;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 16px;
-    }
-
     h2 {
       font-size: 22px;
       font-weight: bold;
@@ -78,12 +20,6 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 24px;
-    }
-
-    @media (min-width: 640px) {
-      .reviews-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
     }
 
     .review-card {
@@ -114,19 +50,26 @@
 
 <body>
 
-  <header>
-    <img src="https://i.top4top.io/p_3483qp7831.jpg" alt="شعار المعهد" />
+  <!-- رأس الصفحة الموحد -->
+  <header class="animate-fadeUp">
+    <img class="logo-right" src="https://i.ibb.co/fYHKG1tG/image.jpg" alt="شعار المعهد" />
+    <img class="logo-left" src="https://i.ibb.co/7NNGzg4p/image.jpg" alt="شعار الموقع" />
     <h1>دليل متدربات معهد الخوارزمي</h1>
     <nav>
-      <a href="index.html">الرئيسية</a>
+      <div class="nav-right">
+        <a href="index.html">الرئيسية</a>
         <a href="opinions.html">إضافة رأي</a>
         <a href="showOpioins.html">تصفح الآراء</a>
-        <a href="#">تصفح القرالب</a>
-        <a href="#">تواصل معنا</a>
-        <a href="#">اسألني</a>
+        <a href="templets.html">تصفح القوالب</a>
+      </div>
+      <div class="nav-left">
+        <a href="#">📞 تواصل معنا</a>
+        <a href="#">🤖 اسألني</a>
+      </div>
     </nav>
   </header>
 
+  <!-- محتوى الصفحة -->
   <main>
     <h2>آراء المتدربات السابقات</h2>
 
@@ -152,8 +95,13 @@
         <p>الشرح واضح ولكن بعض الأدوات ما كانت محدثة، يفضل تحديث المناهج.</p>
       </div>
     </div>
-
   </main>
+
+  <!-- تذييل الصفحة الموحد -->
+  <footer>
+    <p>© 2025 دليل متدربات معهد الخوارزمي. جميع الحقوق محفوظة.</p>
+    <p>للتواصل: <a href="mailto:info@alkhwarizmi.edu.sa">info@alkhwarizmi.edu.sa</a></p>
+  </footer>
 
 </body>
 

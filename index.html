@@ -4,170 +4,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> | معهد الخوارزمي</title>
+  <title>دليل المتدربات | معهد الخوارزمي</title>
 
   <!-- خطوط Google -->
   <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      background-color: #DFE4EC;
-      color: #457b9d;
-      font-family: 'Cairo', sans-serif;
-      direction: rtl;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 24px 0;
-      animation: fadeUp 1s ease-out both;
-      text-align: center;
-    }
-
-    header img {
-      height: 80px;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      font-size: 24px;
-      font-weight: bold;
-      color: #1D3557;
-      margin: 0;
-    }
-
-    nav {
-      margin-top: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-    }
-
-    nav a {
-      background-color: #1D3557;
-      color: white;
-      padding: 8px 20px;
-      border-radius: 9999px;
-      font-size: 14px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    nav a:nth-child(n+5) {
-      background-color: #A569BD;
-    }
-
-    nav a:hover {
-      background-color: #914fa6;
-    }
-
-    main {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 16px;
-    }
-
-    section.box {
-      background-color: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      font-size: 16px;
-      line-height: 1.8;
-      color: #457b9d;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-
-    @media (min-width: 640px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    .card {
-      background-color: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .card .icon {
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-
-    .card h2 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #457b9d;
-      line-height: 1.6;
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .animate-fadeUp {
-      animation: fadeUp 1s ease-out both;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- رأس الصفحة -->
+  <!-- رأس الصفحة الموحد -->
   <header class="animate-fadeUp">
-    <div>
-      <img src="https://i.top4top.io/p_3483qp7831.jpg" alt="شعار المعهد" />
-      <h1>دليل متدربات معهد الخوارزمي</h1>
-      <nav>
+    <img class="logo-right" src="https://i.ibb.co/fYHKG1tG/image.jpg" alt="شعار المعهد" />
+    <img class="logo-left" src="https://i.ibb.co/7NNGzg4p/image.jpg" alt="شعار الموقع" />
+    <h1>دليل متدربات معهد الخوارزمي</h1>
+    <nav>
+      <div class="nav-right">
         <a href="index.html">الرئيسية</a>
         <a href="opinions.html">إضافة رأي</a>
         <a href="showOpioins.html">تصفح الآراء</a>
-        <a href="#">تصفح القرالب</a>
-        <a href="#">تواصل معنا</a>
-        <a href="#">اسألني</a>
-      </nav>
-    </div>
+        <a href="templets.html">تصفح القوالب</a>
+      </div>
+      <div class="nav-left">
+        <a href="#">📞 تواصل معنا</a>
+        <a href="#">🤖 اسألني</a>
+      </div>
+    </nav>
   </header>
-  
- <div> تعديل </div>
-  
+
   <!-- المحتوى -->
   <main>
     <section class="box">
       <h2 style="font-size: 20px; font-weight: bold; color: #1D3557; margin-bottom: 16px;">نبذة عن المعهد</h2>
       <p>
-            معهد الخوارزمي للتدريب بمحافظة الطائف هو أحد المعاهد المعتمدة من المؤسسة العامة للتدريب التقني والمهني، ويُعنى بتقديم برامج تدريبية متخصصة في مجالات الحاسب الآلي، والإدارة، واللغة الإنجليزية، والمهارات المهنية المختلفة، بما يتوافق مع متطلبات سوق العمل.
-
+        معهد الخوارزمي للتدريب بمحافظة الطائف هو أحد المعاهد المعتمدة من المؤسسة العامة للتدريب التقني والمهني، ويُعنى بتقديم برامج تدريبية متخصصة في مجالات الحاسب الآلي، والإدارة، واللغة الإنجليزية، والمهارات المهنية المختلفة، بما يتوافق مع متطلبات سوق العمل.
       </p>
-<h1>وجدان</h1>
-        <h2 style="font-size: 20px; font-weight: bold; color: #1D3557; margin-bottom: 16px;">نبذة عن موقعنا</h2>
-        <p>
-            ---
-        </p>
 
+      <h2 style="font-size: 20px; font-weight: bold; color: #1D3557; margin-bottom: 16px;">نبذة عن موقعنا</h2>
+      <p>
+        ---
+      </p>
     </section>
 
     <div class="grid" style="margin-top: 24px;">
@@ -187,6 +63,12 @@
       </div>
     </div>
   </main>
+
+  <!-- تذييل الصفحة الموحد -->
+  <footer>
+    <p>© 2025 دليل متدربات معهد الخوارزمي. جميع الحقوق محفوظة.</p>
+    <p>للتواصل: <a href="mailto:info@alkhwarizmi.edu.sa">info@alkhwarizmi.edu.sa</a></p>
+  </footer>
 
 </body>
 
