@@ -1,0 +1,153 @@
+<!-- صفحة تواصل معنا -->
+
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <title>تواصل معنا | دليل المتدربات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #DFE4EC;
+      color: #457b9d;
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 24px 0;
+      animation: fadeUp 1s ease-out both;
+      text-align: center;
+      position: relative;
+    }
+
+    header img.logo-right {
+      height: 80px;
+      position: absolute;
+      top: 12px;
+      right: 16px;
+    }
+
+    header img.logo-left {
+      height: 80px;
+      position: absolute;
+      top: 12px;
+      left: 16px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1D3557;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    nav a {
+      background-color: #1D3557;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 9999px;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    nav a:nth-child(n+5) {
+      background-color: #A569BD;
+    }
+
+    nav a:hover {
+      background-color: #914fa6;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1D3557;
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      margin: 8px 0;
+      color: #457b9d;
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeUp {
+      animation: fadeUp 1s ease-out both;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="animate-fadeUp">
+    <img class="logo-right" src="https://i.ibb.co/fYHKG1tG/image.jpg" alt="شعار المعهد" />
+    <img class="logo-left" src="https://i.ibb.co/7NNGzg4p/image.jpg" alt="صورة إضافية" />
+    <h1>دليل متدربات معهد الخوارزمي</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="#">إضافة رأي</a>
+      <a href="#">تصفح الآراء</a>
+      <a href="templets.html">تصفح القوالب</a>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="#">اسألني</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card animate-fadeUp">
+      <div class="icon">📞</div>
+      <h2>تواصل معنا</h2>
+      <p><strong>📧 البريد الإلكتروني:</strong> Dalil@gmail.com</p>
+      <p><strong>📱 رقم الهاتف:</strong> 0125678908</p>
+    </div>
+  </main>
+
+</body>
+
+</html>
