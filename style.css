@@ -62,15 +62,25 @@ nav {
   gap: 12px;
 }
 
-@media (max-width: 768px) {
+nav {
+  position: static; /* الوضع العادي على الشاشات الكبيرة */
+  width: 100%;
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* على الشاشات الصغيرة (600px وأقل) يصبح nav ثابت */
+@media (max-width: 600px) {
   nav {
-    flex-direction: column;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
 
-  .nav-right,
-  .nav-left {
-    justify-content: center;
+  main {
+    padding-top: 80px; /* لتجنب تغطية المحتوى من الـ nav */
   }
 }
 
