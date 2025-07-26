@@ -13,16 +13,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  
+   .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
-  main {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 16px;
-    }
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* عمودان على الشاشات المتوسطة */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة على الشاشات الكبيرة */
+  }
+}
 
     section.box {
       background-color: white;
@@ -34,17 +42,7 @@
       color: #457b9d;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-
-    @media (min-width: 640px) {
-      .grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
+  
 
     .card {
       background-color: white;
@@ -123,17 +121,20 @@
 
   <!-- المحتوى -->
   <main>
-    <div class="grid" style="margin-top: 24px;">
-      <div class="card">
-        <div class="icon">🏫</div>
-        <h2>نبذة عن المعهد</h2>
-        <div class="content">
-          <p>
-            معهد الخوارزمي للتدريب بمحافظة الطائف هو أحد المعاهد المعتمدة من المؤسسة العامة للتدريب التقني والمهني، ويُعنى بتقديم برامج تدريبية متخصصة في مجالات الحاسب الآلي، والإدارة، واللغة الإنجليزية، والمهارات المهنية المختلفة، بما يتوافق مع متطلبات سوق العمل.
-          </p>
-        </div>
+      <div class="grid" style="margin-top: 24px;">
+
+    <div class="card">
+      <div class="icon">🏫</div>
+      <h2>نبذة عن المعهد</h2>
+      <div class="content">
+        <p>
+          معهد الخوارزمي للتدريب بمحافظة الطائف هو أحد المعاهد المعتمدة من المؤسسة العامة للتدريب التقني والمهني، ويُعنى بتقديم برامج تدريبية متخصصة في مجالات الحاسب الآلي، والإدارة، واللغة الإنجليزية، والمهارات المهنية المختلفة، بما يتوافق مع متطلبات سوق العمل.
+        </p>
       </div>
-      <div class="card">
+    </div>
+
+    <div class="card">
+      <a href="templets.html" style="text-decoration: none; color: inherit;">
         <div class="icon">📝</div>
         <h2>قوالب التدريب</h2>
         <div class="content">
@@ -141,18 +142,22 @@
             نماذج احترافية لتقارير المتدربات في التدريب التعاوني تساعد على توثيق الإنجازات.
           </p>
         </div>
-      </div>
-      <div class="card">
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="showOpioins.html" style="text-decoration: none; color: inherit;">
         <div class="icon">💬</div>
         <h2>آراء المتدربات</h2>
         <div class="content">
           <p>
-           استعرضي تقييمات المتدربات السابقات وتجاربهن في المعهد. أو ضيفي رأي جديد.
+            استعرضي تقييمات المتدربات السابقات وتجاربهن في المعهد. أو ضيفي رأي جديد.
           </p>
         </div>
-      </div>
+      </a>
     </div>
 
+    
     <div class="card" style="margin-top: 32px;">
       <div class="icon">🌐</div>
       <h2 style="font-size: 20px; font-weight: bold; color: #1D3557; margin-bottom: 16px;">نبذة عن موقعنا</h2>

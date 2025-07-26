@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* عمودان على الشاشات المتوسطة */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة على الشاشات الكبيرة */
+  }
+}
 body {
   background-color: #DFE4EC;
   color: #457b9d;
@@ -69,6 +92,24 @@ nav {
   padding: 16px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+   .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* عمودان على الشاشات المتوسطة */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة على الشاشات الكبيرة */
+  }
+}
+
 
 /* على الشاشات الصغيرة (600px وأقل) يصبح nav ثابت */
 @media (max-width: 600px) {
@@ -104,11 +145,12 @@ nav a:hover {
 
 /* ----------------------------- */
 
+
 main {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 16px 40px;
-}
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
 
 .section-header {
   text-align: center;
@@ -176,6 +218,7 @@ section.box {
   line-height: 1.8;
   color: #457b9d;
 }
+
 
 .grid {
   display: grid;
