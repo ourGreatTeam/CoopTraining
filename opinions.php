@@ -12,6 +12,7 @@
       margin: 40px auto;
       padding: 0 16px;
     }
+
     h2 {
       font-size: 22px;
       font-weight: bold;
@@ -19,18 +20,21 @@
       margin-bottom: 24px;
       text-align: center;
     }
+
     form {
       background-color: white;
       padding: 24px;
       border-radius: 16px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
+
     label {
       display: block;
       margin-bottom: 8px;
       font-weight: bold;
       color: #1D3557;
     }
+
     input[type="text"],
     input[type="email"],
     textarea,
@@ -43,6 +47,7 @@
       font-family: 'Cairo', sans-serif;
       font-size: 14px;
     }
+
     button {
       background-color: #1D3557;
       color: white;
@@ -53,14 +58,17 @@
       cursor: pointer;
       transition: background 0.3s ease;
     }
+
     button:hover {
       background-color: #457b9d;
     }
+
     .back-link {
       display: block;
       text-align: center;
       margin-top: 24px;
     }
+
     .back-link a {
       background-color: #A569BD;
       color: white;
@@ -70,10 +78,12 @@
       font-size: 14px;
       transition: background 0.3s ease;
     }
+
     .back-link a:hover {
       background-color: #914fa6;
     }
-</style>
+    
+  </style>
 </head>
 
 <body>
@@ -115,7 +125,7 @@
     </form>
 
     <div class="back-link">
-      <a href="showOpinions.html">⬅ العودة إلى آراء المتدربات</a>
+      <a href="showOpinions.php">⬅ العودة إلى آراء المتدربات</a>
     </div>
   </main>
 

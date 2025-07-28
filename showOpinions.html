@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تصفح الآراء | معهد الخوارزمي</title>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>آراء المتدربات | معهد الخوارزمي</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     main {
       max-width: 1200px;
       margin: 40px auto;
       padding: 0 16px;
     }
-
     h2 {
       font-size: 22px;
       font-weight: bold;
@@ -21,43 +18,26 @@
       margin-bottom: 24px;
       text-align: center;
     }
-
     .reviews-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-}
-
-@media (min-width: 640px) {
-  .reviews-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .reviews-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
     .review-card {
       background-color: white;
       padding: 20px;
       border-radius: 16px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
-
     .review-card h3 {
       margin: 0 0 8px;
       font-size: 18px;
       color: #1D3557;
     }
-
     .stars {
       color: #f1c40f;
       margin-bottom: 12px;
     }
-
     .review-card p {
       font-size: 14px;
       color: #457b9d;
@@ -65,10 +45,7 @@
     }
   </style>
 </head>
-
 <body>
-
-  <!-- رأس الصفحة الموحد -->
   <header class="animate-fadeUp">
     <img class="logo-right" src="https://i.ibb.co/fYHKG1tG/image.jpg" alt="شعار المعهد" />
     <img class="logo-left" src="https://i.ibb.co/7NNGzg4p/image.jpg" alt="شعار الموقع" />
@@ -77,21 +54,18 @@
       <div class="nav-right">
         <a href="index.html">الرئيسية</a>
         <a href="opinions.html">إضافة رأي</a>
-        <a href="showOpioins.html">تصفح الآراء</a>
+        <a href="showOpinions.html">تصفح الآراء</a>
         <a href="templets.html">تصفح القوالب</a>
       </div>
       <div class="nav-left">
-        <a href="#">📞 تواصل معنا</a>
+        <a href="contact.html">📞 تواصل معنا</a>
         <a href="#">🤖 اسألني</a>
       </div>
-
     </nav>
   </header>
 
-  <!-- محتوى الصفحة -->
   <main>
     <h2>آراء المتدربات السابقات</h2>
-
     <div class="reviews-grid">
       <div class="review-card">
         <h3>ريم العتيبي</h3>
@@ -116,12 +90,9 @@
     </div>
   </main>
 
-  <!-- تذييل الصفحة الموحد -->
   <footer>
     <p>© 2025 دليل متدربات معهد الخوارزمي. جميع الحقوق محفوظة.</p>
     <p>للتواصل: <a href="mailto:info@alkhwarizmi.edu.sa">info@alkhwarizmi.edu.sa</a></p>
   </footer>
-
 </body>
-
 </html>
