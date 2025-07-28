@@ -121,6 +121,19 @@
 
   <!-- المحتوى -->
   <main>
+        <script>
+  const hour = new Date().getHours();
+  let greeting = "";
+  const color = "#457B9D"; // اللون البنفسجي الموحّد
+
+  if (hour >= 0 && hour < 12) {
+    greeting = "☀️ صباح الخير متدربتنا الغالية!";
+  } else {
+    greeting = "🌙 مساء الخير متدربتنا الغالية!";
+  }
+
+  document.write('<p style="font-size: 22px; font-weight: bold; color: ' + color + '; text-align: center; margin-bottom: 24px;">' + greeting + '</p>');
+</script>
       <div class="grid" style="margin-top: 24px;">
 
     <div class="card">
@@ -130,6 +143,9 @@
         <p>
           معهد الخوارزمي للتدريب بمحافظة الطائف هو أحد المعاهد المعتمدة من المؤسسة العامة للتدريب التقني والمهني، ويُعنى بتقديم برامج تدريبية متخصصة في مجالات الحاسب الآلي، والإدارة، واللغة الإنجليزية، والمهارات المهنية المختلفة، بما يتوافق مع متطلبات سوق العمل.
         </p>
+           <a href="https://www.alkhwarzmi.com/index" target="_blank" style="display: inline-block; background-color: #1D3557; color: white; padding: 8px 20px; border-radius: 9999px; font-size: 14px; text-decoration: none; margin-top: 16px;">
+  زيارة الموقع
+</a>
       </div>
     </div>
 
