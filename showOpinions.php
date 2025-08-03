@@ -86,7 +86,7 @@ $opinions = file("opinions.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
   <footer>
     <p>© 2025 دليل متدربات معهد الخوارزمي. جميع الحقوق محفوظة.</p>
-    <p>للتواصل: <a href="mailto:info@alkhwarizmi.edu.sa">info@alkhwarizmi.edu.sa</a></p>
+    <p>للتواصل: <a href="mailto:info@alkhwarizmi.edu.sa">Dalil@gmail.com</a></p>
   </footer>
 </body>
 </html>
