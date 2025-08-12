@@ -102,7 +102,7 @@
       </div>
       <div class="nav-left">
         <a href="contact.html" class="contact-link">📞 تواصل معنا</a>
-        <a href="" class="ai-chat-link">🤖 اسألني</a>
+        <a href="#" id="askButton">🤖 اسألني</a>
       </div>
     </nav>
   </header>
@@ -150,4 +150,31 @@
   </footer>
 
 </body>
+
+  <script>
+  function openTidio() {
+    if (window.tidioChatApi) {
+      window.tidioChatApi.open();
+    } else {
+      document.addEventListener("tidioChat-ready", function () {
+        window.tidioChatApi.open();
+      });
+    }
+  }
+
+  // ربط الزر بالدالة
+  document.addEventListener("DOMContentLoaded", function () {
+    const askButton = document.getElementById("askButton");
+    if (askButton) {
+      askButton.addEventListener("click", function (e) {
+        e.preventDefault(); // يمنع الانتقال للرابط #
+        openTidio();
+      });
+    }
+  });
+</script>
+
+<!-- Tidio -->
+<script src="//code.tidio.co/ptvnt4uxmohpzpe4qtqe74b9jyqxscd8.js" async></script>
 </html>
+
