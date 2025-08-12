@@ -114,7 +114,7 @@
       </div>
       <div class="nav-left">
         <a href="contact.html">📞 تواصل معنا</a>
-        <a href="#">🤖 اسألني</a>
+        <a href="#" id="askButton">🤖 اسألني</a>
       </div>
     </nav>
   </header>
@@ -196,6 +196,23 @@
     <p>للتواصل: <a href="mailto:info@alkhwarizmi.edu.sa">info@alkhwarizmi.edu.sa</a></p>
   </footer>
 
+    <!-- كود  الشات -->
+  <script>
+    function openTidio() {
+      if (window.tidioChatApi) {
+        window.tidioChatApi.open();
+      } else {
+        document.addEventListener("tidioChat-ready", function () {
+          window.tidioChatApi.open();
+        });
+      }
+    }
+  </script>
+
+  <!--  Tidio   -->
+  <script src="//code.tidio.co/ptvnt4uxmohpzpe4qtqe74b9jyqxscd8.js" async></script>
+    
 </body>
 
 </html>
+
